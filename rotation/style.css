@@ -1,0 +1,113 @@
+ 
+        .common{
+            width:262px;
+            height:220px;}
+        
+        .box{ 
+            background-image: url("img/1.jpg");
+            background-size:cover;
+            box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
+            position:relative;
+            float:left;
+            margin:12px;
+            overflow:hidden; }
+
+        .overlay{
+            position:absolute;
+            background: rgba(0,0,0,0.2);
+            top:-220px;
+            left:0px;
+            transition-property:all;
+            transition-duration:0.4s;
+            transition-timing-function:ease-in-out;}
+
+            
+	.box:hover .overlay{
+    	top:0px;}
+
+
+	.overlay1{
+            position:absolute;
+            background: rgba(0,0,0,0.2);
+            top:0px;
+            left:-262px;
+            transition-property:all;
+            transition-duration:0.4s;
+            transition-timing-function:ease-in-out; }
+
+.box:hover .overlay1{
+    	left:0px;}
+
+        .overlay5{
+            top:0px;
+            opacity:0;
+            transition-duration:0.2s;}
+
+.box:hover > .overlay5{
+    opacity:1;}
+
+.overlay > a{
+display:inline-block;
+    width:50px;
+    height:50px;
+    background-color:#fff;
+    text-align: center;
+    line-height:50px;
+    border-radius:50px;
+    position:absolute;
+    top:85px;
+    left:70px;
+ color:#464646;}
+
+
+
+ .banc1{
+    left:125px  !important;}
+.banc{
+    left:125px  !important;}
+   
+ .a5_1{
+    left:40px !important;
+ }
+
+ .a5_2{
+    left: 180px !important;
+ }
+
+ .box:hover > .overlay5 .a5_1{
+    left:85px !important;
+    }
+    .box:hover > .overlay5 .a5_2{
+        left:137px !important;
+        }
+        
+        .a5_1, .a5_2{
+            transition: all 0.1s linear;
+        } 
+
+.a7_1, .a7_2{
+    transform:scale(2,2);
+    transition:all 0.2s linear;
+}
+
+.box:hover .a7_1, .box:hover .a7_2{
+    transform: scale(1,1);
+}
+
+.a9_2{
+    transform:scale(0,0);
+    transition:all 0.2s linear;
+}
+
+.box:hover .a9_2{
+    transform:scale(1,1);
+}
+.a9_1{
+    transform-origin:65px center;
+    transform:rotateZ(0deg) scale(0,0);
+    transition:all 0.5s linear;
+}
+
+.box:hover .a9_1{
+    transform:rotateZ(360deg)scale(1,1);
+}
